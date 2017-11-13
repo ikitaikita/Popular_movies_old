@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+  
+  
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+       
+        android:layout_below="@+id/header"            
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/ScrollViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            
+              <TextView
+		        android:id="@+id/title"
+		        android:layout_width="match_parent"	
+		        android:layout_marginTop="10dp"	       
+		       	android:layout_height="wrap_content"	        	
+		        android:gravity="center"		       
+		        android:textColor="@color/text_title"
+		         />
+              <TextView
+		        android:id="@+id/textGenre"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="30dp" 		      
+		        android:layout_below="@+id/title"
+		        android:layout_marginLeft="10dip"		         
+		        android:textColor="@color/text_over"
+		        android:textStyle="bold"
+		          />
+               <TextView
+		        android:id="@+id/genre"
+		        android:layout_width="match_parent"
+		       	android:layout_height="wrap_content"  
+		       	android:gravity="left"   
+		        android:layout_below="@+id/textGenre"
+		        android:layout_marginLeft="10dp"	       
+		        android:textColor="@color/text_over"
+		        />
+               <TextView
+		        android:id="@+id/textPopularity"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="30dp" 		      
+		        android:layout_below="@+id/genre"
+		        android:layout_marginLeft="10dip"		         
+		        android:textColor="@color/text_over"
+		        android:textStyle="bold"
+		          />
+              
+              <TextView
+		        android:id="@+id/popularity"
+		        android:layout_width="match_parent"
+		       	android:layout_height="wrap_content"  
+		       	android:gravity="left"   
+		        android:layout_below="@+id/textPopularity"
+		        android:layout_marginLeft="10dp"	       
+		        android:textColor="@color/text_over"
+		        />
+               <TextView
+		        android:id="@+id/textReleaseYear"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="30dp" 		      
+		        android:layout_below="@+id/popularity"
+		        android:layout_marginLeft="10dip"		         
+		        android:textColor="@color/text_over"
+		        android:textStyle="bold"
+		          />
+               <TextView
+		        android:id="@+id/releaseYear"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="wrap_content" 		      
+		        android:layout_below="@+id/textReleaseYear"
+		        android:layout_marginLeft="10dip"		         
+		        android:textColor="@color/text_over"
+		          />
+                  <com.app.movies.internal.ResizableImageView
+                android:id="@+id/poster"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/releaseYear"
+                            
+               />
+                 <TextView
+		        android:id="@+id/textOverview"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="30dp" 		      
+		        android:layout_below="@+id/poster"
+		        android:layout_margin ="10dip"
+		        		         
+		        android:textColor="@color/text_over"
+		        android:textStyle="bold"
+		          />
+               <TextView
+		        android:id="@+id/overview"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="wrap_content" 		      
+		        android:layout_below="@+id/textOverview"
+		        android:layout_marginLeft="10dip"		         
+		        android:textColor="@color/text_over"
+		          />
+               <com.google.android.youtube.player.YouTubePlayerView
+			    android:id="@+id/youtube_view"
+			    android:layout_width="match_parent"
+			    android:layout_height="200dip"
+			    android:layout_below="@+id/overview" />
+		        
+          </RelativeLayout>
+         
+    </ScrollView>
+
+   
+    <!--  LinearLayout
+        android:id="@+id/advert"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+      </LinearLayout-->
+   
+  
+
+</RelativeLayout> 

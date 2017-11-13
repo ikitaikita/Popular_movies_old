@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#CC3300</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_title">#222622</color>
+    <color name="text_over">#224021</color>
+    
+    <color name="text_new_light">#FBFAAD</color>
+	<color name="text_primary_light">#B7C6BC</color>
+	<color name="text_secondary_light">#CCCCCC</color>
+	<color name="text_spell">#009A85</color>
+    <color name="grey">#B2B3BE</color>
+   
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+</resources>

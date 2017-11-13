@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:paddingBottom="5dp"
+    android:layout_marginTop="5dp" >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        />
+			 
+	 <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"              
+        android:layout_margin="5dip"
+        android:textColor="@color/text_title"
+        android:layout_toRightOf="@+id/image"
+        android:gravity="center_vertical"
+         />
+	 
+	 <LinearLayout
+	    android:id="@+id/genremovie"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/image"
+        android:orientation="horizontal" >
+	        <TextView
+	        android:id="@+id/textgenre"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_margin="5dip"      
+	        android:gravity="center_vertical"
+	        android:text="@string/genre"
+	        android:textSize="17sp"/>
+	         <TextView
+	        android:id="@+id/genre"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_margin="5dip" 
+	        android:layout_weight="6"     
+	        android:gravity="center_vertical"
+	        />
+	     
+	 </LinearLayout>
+	 <LinearLayout
+	    android:id="@+id/popularitymovie"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        android:layout_below="@+id/genremovie"
+        android:layout_toRightOf="@+id/image"
+        android:orientation="horizontal" >
+	         
+	       
+	    <TextView
+	        android:id="@+id/textpopularity"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_margin="5dip"      
+	        android:gravity="center_vertical"
+	        android:text="@string/popularity"
+	        android:textSize="17sp"/>
+	    <TextView
+	        android:id="@+id/popularity"
+	         android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_margin="5dip" 
+	        android:layout_weight="6"     
+	        android:gravity="center_vertical"
+	        />
+	         
+	 </LinearLayout>
+      <LinearLayout
+	    android:id="@+id/releasemovie"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        android:layout_below="@+id/popularitymovie"
+        android:layout_toRightOf="@+id/image"
+        android:orientation="horizontal" >
+	         
+	       
+	    <TextView
+	        android:id="@+id/textrelease"
+	        android:layout_width="wrap_content"	        
+	        android:layout_height="wrap_content" 
+	        android:layout_margin="5dip"      
+	        android:gravity="center_vertical"
+	        android:text="@string/release"
+	        android:textSize="17sp"/>
+	    <TextView
+	        android:id="@+id/release"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_margin="5dip" 
+	        android:layout_weight="6"     
+	        android:gravity="center_vertical"
+	        />
+	         
+	 </LinearLayout>
+
+    
+
+</RelativeLayout>
